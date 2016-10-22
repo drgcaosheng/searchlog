@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block content %}
+	<p>退出成功!如需登陆请再<a href="/login/">点击此处</a>跳转至登陆页面!</p>
+{% endblock %}

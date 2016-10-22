@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}
+	<title>Page not found</title>
+{% endblock %}
+{% block content %}
+<h1 style="text-align: center; padding-top: 50px;">您好！您访问的页面不存在！</h1>
+<p style="text-align: center; padding-top: 30px;">请访问正确的链接地址，谢谢！<a href="/login/">点击此处</a>跳转至首页！</p>
+{% endblock %}

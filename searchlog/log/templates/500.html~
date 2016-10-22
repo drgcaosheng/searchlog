@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Page error</title>
+</head>
+<body>
+<h1 style="text-align: center; padding-top: 50px;">好像出错了！！！</h1>
+<p style="text-align: center; padding-top: 30px;">联系管理员处理下！<a href="/login/">点击此处</a>跳转至首页！</p>
+</body>
+</html>

@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title></title>
-</head>
-<body>
-<form method="POST" action="">
-{{form.as_p}}
-<input type="submit" value="searchlog">
-</form>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+	<form method="POST" action="">
+		{{form.as_p}}
+		<input type="submit" value="searchlog">
+		<a href="/logout/">注销登陆</a><br/>
+		<hr>
+		<div style="border-top-width: 0px; padding-top: 20px;">
+		{% for logline in showlog %}
+			{{ logline }}<br/>
+		{% endfor %}
+		</div>
+	</form>
+	{% if searchtext_error %}
+	    <p style="color: red;">请搜索正确的内容！不要在搜索内容中带有“|”符号，谢谢！</p>
+	{% endif %}
+	{% if file_error %}
+	    <p style="color: red;">您搜索的日期没有日志，请输入正确的日期，谢谢！格式如：2016-10-10</p>
+	{% endif %}
+{% endblock %}
